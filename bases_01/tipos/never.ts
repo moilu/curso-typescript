@@ -2,6 +2,6 @@
     const error = (message: string) => {
         throw new Error(message);
     }
-    error('Auxilio');
+    // error('Auxilio');
     console.log('Hola Mundo');
 })();
