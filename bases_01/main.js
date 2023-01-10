@@ -11,8 +11,15 @@
         }
     }
     Avenger.avgAge = 35;
+    class Xmen extends Avenger {
+        constructor(name, team, realName, isMutant) {
+            super(name, team, realName);
+            this.isMutant = isMutant;
+            console.log('Constructor Xmen llamado');
+        }
+    }
     const hormiga = new Avenger('Antman', 'Capitán', 'Scott Lang');
-    console.log(hormiga.bio());
-    console.log(Avenger.avgAge);
+    const wolverine = new Xmen('Wolverine', 'Xmen', 'Logan', true);
+    console.log(wolverine.bio());
 })();
 //# sourceMappingURL=main.js.map
